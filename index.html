@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-id="th-modified">Review Verifier | Fantastic Four</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Review Verifier | Fantastic Four" data-id="th-modified" ><meta name="description" content="Collection of Documents" data-id="th-modified" ><meta property="og:description" content="Collection of Documents" data-id="th-modified" ><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified" ><meta property="og:image:width" content="1501" data-id="th-modified" ><meta property="og:image:height" content="1501" data-id="th-modified" ><meta property="og:image:type" content="image/png" data-id="th-modified" ><meta property="og:url" content="https://orange-jilleen-64.tiiny.site/" data-id="th-modified" ><meta property="og:type" content="website" data-id="th-modified" ><script defer data-domain="orange-jilleen-64.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+<body>
+    <nav class="navbar glass">
+        <div class="logo">Review <span>Verifier</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="badge">🛡️ Fake Review Detection System</div>
+                <h1>Identifying False Product Reviews.</h1>
+                <p>Paste any product URL to immediately receive a detailed fake review analysis and authenticity score. Protect yourself from misleading ratings and deceptive tactics.</p>
+                
+                <div class="review-input-container">
+                    <input type="url" id="productUrl" placeholder="https://amazon.com/product..." class="review-input">
+                    <button class="btn-primary" id="analyzeBtn">Analyze Reviews</button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="mockup-frame">
+                    <div class="mockup-screen">
+                        <div class="mockup-header">
+                            REVIEW VERIFIER
+                        </div>
+                        <div class="mockup-body" id="mockupBody">
+                            <div class="empty-state" id="emptyState">
+                                <h3>No Analysis Yet</h3>
+                                <p>Paste a product URL to see the authenticity score.</p>
+                            </div>
+                            
+                            <!-- Detailed Results (Hidden by Default) -->
+                            <div class="analysis-result-detailed" id="analysisResultDetailed">
+                                <div class="product-info">
+                                    <div class="product-icon">🎧</div>
+                                    <div>
+                                        <h4 id="productTitle">Aura Headphones</h4>
+                                        <span style="font-size: 0.8rem; color: #10b981; font-weight: bold;">URL Verified</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="score-container">
+                                    <div class="score-title">AUTHENTICITY SCORE</div>
+                                    <div class="gauge-chart">
+                                        <div class="gauge-bg"></div>
+                                        <div class="gauge-fill" id="scoreGauge"></div>
+                                        <div class="gauge-text" id="scoreValue">0%</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="metrics-list">
+                                    <div class="metric-item">
+                                        <div class="metric-header">
+                                            <span>Bot Activity</span>
+                                            <span id="botVal">0%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" id="botProgress" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="metric-item">
+                                        <div class="metric-header">
+                                            <span>Language Patterns</span>
+                                            <span id="langVal">0%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" id="langProgress" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="rating-comparison">
+                                    <div class="rating-box">
+                                        <h4>Original Rating</h4>
+                                        <div class="rating-val original" id="originalRating">0.0</div>
+                                    </div>
+                                    <div class="vs">VS</div>
+                                    <div class="rating-box">
+                                        <h4>Adjusted Rating</h4>
+                                        <div class="rating-val adjusted" id="adjustedRating">0.0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" class="problem-section">
+            <h2 class="section-title">Key Problem <span>Area</span></h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">⭐</div>
+                    <h3>1. Inflated Ratings</h3>
+                    <p>High rating products often use robot ratings or paid reviewers to artificially inflate their scores, deceiving honest buyers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">💵</div>
+                    <h3>2. Deceptive Tactics</h3>
+                    <p>Money in exchange for 5-star reviews is a common practice, making the rating system unreliable and biased.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🤔</div>
+                    <h3>3. Customer Misleading</h3>
+                    <p>Users looking for quality products end up confused and misled by high ratings on poor quality items, wasting their money.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title">Our <span>Solution</span></h2>
+            <div class="about-content glass">
+                <p>We built a simple website interface where customers paste any product URL to immediately receive a detailed fake review analysis and authenticity score.</p>
+                <p>Our tool identifies suspicious patterns, bot activity, and unusual language in reviews to calculate a true adjusted rating, saving you time and money.</p>
+            </div>
+        </section>
+
+        <section id="team" class="team">
+            <h2 class="section-title">Fantastic <span>Four</span></h2>
+            <div class="team-grid">
+                <div class="team-member glass">
+                    <h3>KARPASWAMY K K</h3>
+                </div>
+                <div class="team-member glass">
+                    <h3>RAJA MUKHESH KUMAAR</h3>
+                </div>
+                <div class="team-member glass">
+                    <h3>MIRTHIPATI ALEKHYA</h3>
+                </div>
+                <div class="team-member glass">
+                    <h3>AKHULA HARINI</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+            <div class="faq-container">
+                <div class="faq-item glass">
+                    <div class="faq-question"><span class="faq-text">How does the review analysis work?</span> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer"><p>We use NLP (Natural Language Processing) to detect sentiment and identify duplicate or spam language patterns in user reviews.</p></div>
+                </div>
+                <div class="faq-item glass">
+                    <div class="faq-question"><span class="faq-text">Which shopping apps are supported?</span> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer"><p>Currently, we support Amazon, Flipkart, and Myntra. We are actively working on adding more platforms.</p></div>
+                </div>
+                <div class="faq-item glass">
+                    <div class="faq-question"><span class="faq-text">Is the service free to use?</span> <span class="faq-icon">+</span></div>
+                    <div class="faq-answer"><p>Yes, our tool is completely free during this hackathon phase!</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <form class="contact-form glass" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+
+        <section id="thank-you" class="thank-you">
+            <div class="thank-you-box glass">
+                <h2 class="section-title" style="margin-bottom: 1rem;">Thanking <span>You</span></h2>
+                <p>We appreciate you taking the time to explore our hackathon project. Let's make online shopping safer and more reliable together!</p>
+                <div class="heart">❤️</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <p>&copy; 2026 Fantastic Four. Fake Review Detection Project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
